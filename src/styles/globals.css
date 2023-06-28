@@ -12,6 +12,7 @@
 html,
 body {
   max-width: 100vw;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -20,19 +21,173 @@ a {
   text-decoration: none;
 }
 
+.button-active {
+  background-color: #007EFF;
+  border: 2px solid #007EFF;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: min-content;
+  width: max-content;
+  font-size: 15.3px;
+  min-width: max-content;
+  padding: 5px 15px 5px 15px;
+  transition: 0.2s;
+}
+
+.button-not-active {
+  border: 2px solid #1C3C50;
+  color: #1C3C50;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: min-content;
+  width: max-content;
+  font-size: 15.3px;
+  min-width: max-content;
+  padding: 5px 15px 5px 15px;
+  transition: 0.2s;
+}
+
+.button-not-active:hover {
+  border: 2px solid #007EFF;
+  color: #007EFF;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: min-content;
+  width: max-content;
+  font-size: 15.3px;
+  min-width: max-content;
+  padding: 5px 15px 5px 15px;
+  transition: 0.2s;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  column-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #00000038 0px 0px 50px;
+  overflow: hidden;
+  border-radius: 15px;
+  width: auto;
+}
+
+.video-card-image{
+  width: 100%;
+  height: max-content;
+}
+
+.video-card-content{
+  font-size: 11.5px;
+  padding: 15px;
+  font-family: "PlusJakartaSans-Regular";
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 @font-face {
   font-family: "PlusJakartaSans-Regular";
   src: url("/fonts/PlusJakartaSans-Regular.ttf") format('truetype');
 }
+
 @font-face {
   font-family: "PlusJakartaSans-Medium";
   src: url("/fonts/PlusJakartaSans-Medium.ttf") format('truetype');
 }
+
 @font-face {
   font-family: "PlusJakartaSans-SemiBold";
   src: url("/fonts/PlusJakartaSans-SemiBold.ttf") format('truetype');
 }
+
 @font-face {
   font-family: "PlusJakartaSans-Bold";
   src: url("/fonts/PlusJakartaSans-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "PlusJakartaSans-ExtraBold";
+  src: url("/fonts/PlusJakartaSans-ExtraBold.ttf") format('truetype');
+}
+
+.col-1 {
+  width: 10%;
+  padding: 10px;
+}
+
+.col-2 {
+  width: 20%;
+  padding: 10px;
+}
+
+.col-3 {
+  width: 30%;
+  padding: 10px;
+}
+
+.col-4 {
+  width: 40%;
+  padding: 10px;
+}
+
+.col-5 {
+  width: 50%;
+  padding: 10px;
+}
+
+.col-6 {
+  width: 60%;
+  padding: 10px;
+}
+
+.col-7 {
+  width: 70%;
+  padding: 10px;
+}
+
+.col-8 {
+  width: 80%;
+  padding: 10px;
+}
+
+.col-9 {
+  width: 90%;
+  padding: 10px;
+}
+
+.col-10 {
+  width: 100%;
+  padding: 10px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }

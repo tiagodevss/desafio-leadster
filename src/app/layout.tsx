@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body style={{fontFamily: "PlusJakartaSans-Regular"}}>{children}</body>
+      <body style={{fontFamily: "PlusJakartaSans-Regular", color: "#1C3C50", fontSize: 15.3}}>{children}</body>
     </html>
   )
 }
